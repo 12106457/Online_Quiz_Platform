@@ -22,9 +22,9 @@ The platform uses [EmailJS](https://www.emailjs.com/) for sending emails to user
 
 - **Email Template**
   Here is a visual representation of the email template used in the project:
-  ![Email Template](assets/Email_template.png)
+  ![Email Template](https://github.com/your-username/your-repo-name/raw/main/client/src/assets/Email_template.png)
 
-- \*\* Screenshort of Email Received:
+- Screenshort of Email Received:
   ![Email Screenshot](assets/Email_screenshort.png)
 
 ## Installation
