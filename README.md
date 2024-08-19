@@ -38,12 +38,27 @@ To get started with this project, follow these steps:
    git clone https://github.com/12106457/cipher-schools-assignment.git
    ```
 2. **Navigate to the project directory::**
-   cd cipher-schools-assignment
-3. **Go to client file**
-   cd client
-4. **Install dependencies**
-   npm install
-5. **Now take new terminal**
-   cd server
-6. **npm install**
-   nodemon index
+  
+   ```sh
+    cd cipher-schools-assignment
+   ```
+4. **Go to client file**
+   ```sh
+    cd client
+   ```
+   
+5. **Install dependencies**
+   ```sh
+    npm install
+   ```
+   
+6. **Now open new terminal**
+  ```sh
+    cd server
+   ```
+   
+8. **To start server **
+   ```sh
+    nodemon index
+   ```
+   
