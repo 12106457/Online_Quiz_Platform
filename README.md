@@ -22,11 +22,14 @@ The platform uses [EmailJS](https://www.emailjs.com/) for sending emails to user
 
 - **Email Template**
   Here is a visual representation of the email template used in the project:
-  ![Screenshot 2024-08-19 224603](https://github.com/user-attachments/assets/c116d378-e2f6-46ba-b28b-d99d63fea404)
+  
+  <img src="https://github.com/user-attachments/assets/c116d378-e2f6-46ba-b28b-d99d63fea404" alt="Screenshot 2024-08-19 224603" width="600" height="auto">
+
 
 
 - Screenshort of Email Received:
-  ![Screenshot 2024-08-19 225107](https://github.com/user-attachments/assets/2446f933-6afb-4b80-b77a-e2e5bc7a6334)
+  
+  <img src="https://github.com/user-attachments/assets/2446f933-6afb-4b80-b77a-e2e5bc7a6334" alt="Screenshot 2024-08-19 225107" width="600" height="auto">
 
 
 ## Installation
@@ -61,4 +64,35 @@ To get started with this project, follow these steps:
    ```sh
     nodemon index
    ```
-   
+
+Project Output:
+
+Login page :
+
+<img src="https://github.com/user-attachments/assets/33d972e0-44be-4361-9f55-946062809646" alt="Screenshot 2024-08-19 231447" width="400" height="auto">
+
+
+Login Page Validation:
+
+<img src="https://github.com/user-attachments/assets/008d403e-780c-45b2-a1d7-40df4dc89b97" alt="Screenshot 2024-08-19 231523" width="400" height="auto">
+
+Register Page:
+
+<img src="https://github.com/user-attachments/assets/080a74f9-9787-4270-98ca-b34e1087cc5a" alt="Screenshot 2024-08-19 231500" width="400" height="auto">
+
+Register Page Validation
+
+<img src="https://github.com/user-attachments/assets/ad43037b-88c3-4312-b6ac-75cf82e9ae9c" alt="Screenshot 2024-08-19 231537" width="400" height="auto">
+
+Test Environment: 
+
+<img src="https://github.com/user-attachments/assets/04bb5758-4dec-4b58-abad-b6f932498eeb" alt="Screenshot 2024-08-19 231607" width="400" height="auto">
+
+Test Interface:
+
+<img src="https://github.com/user-attachments/assets/4f0647f6-55ba-4e0c-bec2-f96a4da14dd6" alt="Screenshot 2024-08-19 231624" width="400" height="auto">
+
+Test Finish Page:
+
+<img src="https://github.com/user-attachments/assets/f5ee1501-716d-4754-9ebd-61fd4e09792c" alt="Screenshot 2024-08-19 231647" width="400" height="auto">
+
