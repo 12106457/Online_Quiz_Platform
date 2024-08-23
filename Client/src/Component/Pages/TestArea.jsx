@@ -11,6 +11,8 @@ const TestArea = () => {
     const [date,setDate]=useState("");
 
     const[score,setscore]=useState(0);
+
+    const[testCompleted,setTestCompleted]=useState(false);
     
 
     const state=useSelector((state)=>{return state})
@@ -31,7 +33,7 @@ const TestArea = () => {
         .then((res) => res.json())
         .then((data) => {
             if (data && data.mcqs) {
-                setMcqs(data.mcqs);  // Ensure data.mcqs exists before setting state
+                setMcqs(data.mcqs);  
             } else {
                 alert("No questions found.");
             }
@@ -67,10 +69,12 @@ const TestArea = () => {
         const day = today.getDate();
         let todayDate=`${day}-${month}-${year}`;
         setDate(todayDate);
+        setscore(testscore);
         form.current.elements.name.value = state.name;
         form.current.elements.score.value = testscore;  
         form.current.elements.date.value = todayDate;
         form.current.elements.email.value = state.email;
+
 
         let data={
             email:state.email,
@@ -101,6 +105,7 @@ const TestArea = () => {
         .then((res)=>res.json())
         .then((data)=>{
             console.log(data.message);
+            setTestCompleted(true);
             navigate('/complete')
         })
         .catch((err)=>{
@@ -159,7 +164,9 @@ const TestArea = () => {
             <button onClick={handleSubmit} className="btn btn-primary w-75 mb-3">Submit</button>
             </div>
             <div>
-                <Webcam width={"140px"} className='webcam'/>
+               {
+                (!testCompleted)?( <Webcam width={"140px"} className='webcam'/>):("")
+               }
             </div>
 
             <div className='form' >
