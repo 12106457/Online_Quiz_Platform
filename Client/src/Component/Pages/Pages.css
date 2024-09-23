@@ -91,3 +91,46 @@
     cursor: pointer;
 }
 
+.text-submit-button{
+    position: absolute;
+    bottom: 0;
+    
+
+}
+
+
+.mcq-container {
+    background: linear-gradient(to bottom, rgb(222, 224, 224), rgb(72, 164, 234));
+    width: 75%;
+    height: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.mcq-inner-container{
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px rgb(20, 20, 20);
+    margin: 2rem;
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?ga=GA1.1.1691537548.1719505143&semt=ais_hybrid");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    /* Your CSS styles here */
+    .login-form{
+
+        width: 100% !important;
+    }
+}

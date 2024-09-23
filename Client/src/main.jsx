@@ -11,6 +11,7 @@ import Store from "./Component/Store/Store.jsx"
 import TestArea from './Component/Pages/TestArea.jsx'
 import TestCompleted from './Component/Pages/TestCompleted.jsx'
 import PrivateRoute from './Component/Pages/PrivateRoute.jsx'
+import Page404 from './Component/Pages/Page404.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,9 @@ createRoot(document.getElementById('root')).render(
       <Route path='/home' element={<PrivateRoute component={App}/>} />
       <Route path='/test' element={<PrivateRoute component={TestArea}/>}/>
       <Route path='/complete' element={<PrivateRoute component={TestCompleted}/>}/>
+
+
+      <Route path='/page404' element={<Page404/>} />
     </Routes>
     </BrowserRouter>
     </Provider>

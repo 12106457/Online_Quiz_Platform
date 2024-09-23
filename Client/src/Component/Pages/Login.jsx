@@ -37,6 +37,7 @@ const Login = () => {
         if(emailerror==""&&passworderror==""){
             fetch("http://localhost:3000/login",{
                 method:"POST",
+                // credentials: "include",
                 body:JSON.stringify(data),
                 headers:{
                     "Content-Type":"application/json"
@@ -44,6 +45,7 @@ const Login = () => {
             })
             .then(res=>res.json())
             .then((data)=>{
+                console.log(data);
                 alert(data.message);
                 if(data.status){
                     dispatch({type:'data',payload:{token:data.token,name:data.data.name,email:data.data.username}})
@@ -51,7 +53,7 @@ const Login = () => {
                 }
             })
             .catch((err)=>{
-                alert(err.error);
+                navigate('/page404');
             })
         }
         
@@ -60,7 +62,7 @@ const Login = () => {
   return (
     <div className='container '>
         <h2 className='text-center text-primary'>Login Form </h2>
-        <form className='w-25 mx-auto border border-primary p-3 rounded' onSubmit={handleSubmit}>
+        <form className='w-25 mx-auto border border-primary p-3 rounded login-form' onSubmit={handleSubmit}>
             <div className='form-group'>
             <label htmlFor="email" className='mb-1'>Email: </label>
             <input type="email" id='email' name='email' placeholder='Enter Email' className='form-control' value={data.email} onChange={handleData}/>
